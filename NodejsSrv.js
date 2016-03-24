@@ -30,7 +30,7 @@ var lisFn = function(req, rsp){
 		console.log(reqStr);
 		console.log(reqJsonObj);
 		rsp.write('<p>Hello, Your <span style="font-weight:bold;">[' + actType + ']</span> request for <span style="font-weight:bold;">[' + actTarUrl + ']</span> with data <span style="font-weight:bold;">[' + reqStr + '] start on proxy server now.</p>');
-		
+		rsp.end();
 	});
 	
 	req.on('close', function(){
