@@ -7,6 +7,3 @@ function nodeAjax(action, url, senddata, parseFn)
     a.send(senddata || null);
 }
 
-nodeAjax("get", "http://www.baidu.com/", null, function(){
-	console.log(this);
-})
